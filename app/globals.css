@@ -49,7 +49,19 @@
 }
 
 button {
-  @apply bg-linear-to-r from-[#faf5cf] to-[#a37d54] rounded-lg text-black cursor-pointer
+  @apply  bg-[linear-gradient(to_right,#faf5cf,#a37d54,#faf5cf)]
+          bg-[length:200%_100%]
+          bg-right
+          hover:bg-left
+          transition-all
+          duration-500
+          ease-in-out
+          rounded-lg
+          text-black
+          cursor-pointer
+          border
+          border-[#a37d54]
+          dark:border-none;
 }
 
 :root {

@@ -75,7 +75,8 @@ export default function Upload() {
         }
 
         { status !== 'uploading' &&
-            <button className='px-8 py-3 cursor-pointer capitalize hover:opacity-50' onClick={handleUpload}>upload</button>
+            <button className='px-8 py-3 cursor-pointer capitalize' onClick={handleUpload}>upload</button>
+            // <Button></Button>
         }
         
         {status === "success" && <p className='font-semibold text-green-500 capitalize'>file uploaded successfully!</p>}
